@@ -23,10 +23,23 @@
       ],
       "UpstreamPathTemplate": "/api/vendors",
       "UpstreamHttpMethod": [ "Get" ]
+    },
+  
+    {
+      "DownstreamPathTemplate": "/api/Auth/Login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 60862
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/Login",
+      "UpstreamHttpMethod": [ "Post" ]
     }
 
   ],
   "GobalConfiguration": {
-    "BaseUrl": "https://localhost:6001"
+    "BaseUrl": "http://localhost:2185"
   }
 }
